@@ -1,0 +1,22 @@
+﻿<Window x:Class="MemoryTilesGame.IntermediaryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MemoryTilesGame"
+        mc:Ignorable="d"
+        Title="IntermediaryWindow" Height="450" Width="800">
+    <Grid>
+        <UniformGrid Rows="1" Columns="5" HorizontalAlignment="Center" VerticalAlignment="Top" Height="66" Margin="0,338,0,0" Width="668">
+            <Button Content="New Game" Name="newGameButton" Height="30" Width="80" Click="newGameButton_Clicked" />
+            <Button Content="Custom game" Name="customGameButton" Height="30" Width="80" Click="customGameButton_Click"/>
+            <Button Content="Open Game" Name="openGameButton" Height="30" Width="80"/>
+            <Button Content="Statistics" Name="statisticsButton" Height="30" Width="80"/>
+            <Button Content="Go back" Name="goBackButton" Height="30" Width="80" Click="goBackButton_Click"/>
+
+        </UniformGrid>
+        <Image Name="actualUserProfilePicImage" Height="165"  Width="195" Margin="302,54,302,215"/>
+        <TextBlock Name="actualUserTextBlock" FontSize="30" TextAlignment="Center" FontWeight="ExtraBold" HorizontalAlignment="Center" Margin="0,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="144"/>
+
+    </Grid>
+</Window>

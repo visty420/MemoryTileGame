@@ -1,0 +1,29 @@
+﻿<Window x:Class="MemoryTilesGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MemoryTilesGame"
+        mc:Ignorable="d"
+        Title="SignIn" Height="450" Width="800">
+    <Grid>
+        <TextBlock FontWeight="Bold" TextAlignment="Center" FontSize="25">Welcome, enjoy this game!</TextBlock>
+        <ListView Name="PlayerListView" Margin="56,40,532,103" SelectionChanged="PlayerListView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding UserNameBinding}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Image Name="userProfilePicture" HorizontalAlignment="Left" Height="176" Margin="507,51,0,0" VerticalAlignment="Top" Width="171"/>
+        <UniformGrid Rows="1" Columns="4" HorizontalAlignment="Center" VerticalAlignment="Top" Height="66" Margin="0,338,0,0" Width="668">
+            <Button Content="New User" Name="newUserButton"  Margin="10" Click="newUserButton_Click"/>
+            <Button Content="Delete User" Name="deleteUserButton"  Margin="10" Click="deleteUserButton_Click"/>
+            <Button Content="Play" Margin="10" Name="playButton" Click="playButton_Clicked"/>
+            <Button Content="Exit" Margin="10" Name="exitButton" Click="exitButton_Click"/>
+        </UniformGrid>
+        <Button Content="Previous User" Name="previousUserButton" HorizontalAlignment="Left" Margin="507,249,0,0" VerticalAlignment="Top" Click="previousUserButton_Click"/>
+        <Button Content="Next User" Name="nextUserButton" HorizontalAlignment="Left" Margin="625,249,0,0" VerticalAlignment="Top" Click="nextUserButton_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="MemoryTilesGame.NewUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MemoryTilesGame"
+        mc:Ignorable="d"
+        Title="NewUserWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock Name="userNameTextBlock" FontWeight="Bold" FontSize="30"  HorizontalAlignment="Left" Height="46" Margin="88,94,0,0" TextWrapping="Wrap" Text="Username :" VerticalAlignment="Top" Width="167"/>
+        <TextBox Name="userNameTextBox" HorizontalAlignment="Left" Margin="260,101,0,0" VerticalAlignment="Top" Width="306" Height="32" Background="White"/>
+        <TextBlock Name="imageTextBlock" FontWeight="Bold" FontSize="30" HorizontalAlignment="Left" Margin="88,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="115"><Run Text="Image :"/><LineBreak/><Run/></TextBlock>
+        <Image Name="imageImagePicker" HorizontalAlignment="Left" Height="161" Margin="260,171,0,0" VerticalAlignment="Top" Width="190"/>
+        <Button Content="Previous" Name="previousPictureButton" HorizontalAlignment="Left" Margin="260,355,0,0" VerticalAlignment="Top" Click="previousPictureButton_Click" Height="46" Width="58" RenderTransformOrigin="-0.455,0.549"/>
+        <Button Content="Next" Name="nextPictureButton" HorizontalAlignment="Center" Margin="0,355,0,0" VerticalAlignment="Top" Click="nextPictureButton_Click" Height="46" Width="58" RenderTransformOrigin="-0.563,0.711"/>
+        <Button Content="Sign Up" Name="signUpButton" HorizontalAlignment="Left" Margin="594,211,0,0" VerticalAlignment="Top" Height="91" Width="113" Click="signUpButton_Click"/>
+
+    </Grid>
+</Window>
